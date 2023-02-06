@@ -252,7 +252,7 @@ Running deployment:
 
 Exited the cloud using `prefect cloud logout`.
 
-I've also tested Slack Automation by creating my own workspace and app cause the URL webhook attached to the question didn't work for me. 
+I've also tested Slack Automation by creating my own workspace and app cause the Webhook URL attached to the question didn't work for me. 
 I received the notification successfully after flow run completion.
 
 * The answer is: 514,392
