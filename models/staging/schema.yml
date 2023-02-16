@@ -2,9 +2,9 @@ version: 2
 
 sources: 
   -name: staging
-    database: dtc-de-375600
-    schema: trips_data_all
+   database: dtc-de-375600
+   schema: trips_data_all
 
-    tables: 
+  tables: 
     -name: green_tripdata
     -name: yellow_tripdata
