@@ -12,5 +12,5 @@ select
     -- trip info
     cast(dispatching_base_num as string) as dispatching_base_num,
     cast(affiliated_base_number as string) as affiliated_base_number,
-    cast(sr_flag as integer) as sr_flag
+    cast(sr_flag as numeric) as sr_flag
 from {{ source('hw_staging', 'external_fhv_tripdata') }}
