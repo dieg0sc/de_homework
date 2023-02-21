@@ -8,6 +8,13 @@ sources:
    tables: 
     - name: green1_tripdata
     - name: yellow1_tripdata
+  
+ - name: hw_staging
+   database: dtc-de-375600
+   schema: fhv_data
+
+   tables:
+     - name: external_fhv_tripdata
 
 # This part is not mandatory, but advisable.
 models:
