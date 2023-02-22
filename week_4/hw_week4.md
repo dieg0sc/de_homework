@@ -148,7 +148,7 @@ These are the results I got for each month:
 <br>
 
 <picture>
-<source media= "(prefers-color-scheme: light)" srcset= "https://github.com/dieg0sc/de_homework/blob/main/images/q5_trips_per_month.png">
+<source media= "(prefers-color-scheme: light)" srcset= "https://github.com/dieg0sc/de_homework/blob/main/images/q5_fixed.png">
 <img alt= "This is the picture for question 5.">
 </picture>
 
