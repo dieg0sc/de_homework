@@ -16,7 +16,10 @@ WHERE DATE(pickup_datetime) BETWEEN '2019-01-01' AND '2020-12-31';
 
 I got the answer from looking at the *Pie* graph in Google Looker Studio.
 
-////add .png image
+<picture>
+<source media= "(prefers-color-scheme: light)" srcset= "https://github.com/dieg0sc/de_homework/blob/main/images/q2_service_distribution.png">
+<img alt= "This is the picture for question 2.">
+</picture>
 
 * The answer is: 89.9/10.1
 
