@@ -127,7 +127,7 @@ on fhv_data.dolocationid = dropoff_zone.locationid
 ``` 
 Then, I ran  `dbt build --select +fact_fhv_trips` (the model and its dependencies)
 <br>
-Once the table's been created, I wrote the following query in BQ:
+Once the table was created, I wrote the following query in BQ:
 
 ```sql
 SELECT COUNT(*) 
