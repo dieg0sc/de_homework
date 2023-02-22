@@ -1,4 +1,5 @@
 # Homework: Week 4
+<br>
 
 ## Question 1. Counting 2019-2020 fact_trips records
 
@@ -9,8 +10,11 @@ SELECT COUNT(*)
 FROM `dtc-de-375600.dbt_production.fact_trips` 
 WHERE DATE(pickup_datetime) BETWEEN '2019-01-01' AND '2020-12-31';
 ```
+<br>
 
 * The answer is: 61,648,442
+
+<br>
 
 ## Question 2. Data Distribution 2019-2020 (Green & Yellow) 
 
@@ -22,8 +26,14 @@ I got the answer from looking at the *Pie* graph in Google Looker Studio.
 </picture>
 
 <br>
+<!-- added this commented line because the line break wasn't working after the picture HTML element. -->
+<br>
 
 * The answer is: 89.9/10.1
+
+<br>
+<!-- another line cause the issue seems to remain, lol. -->
+<br>
 
 ## Question 3. Counting 2019 FHV records (staging model)
 
@@ -44,6 +54,7 @@ I've added:
 
 I'll now create our staging model `stg_fhv_tripdata`. I omitted the variable definition, so there's no reason to include `is_test_run: false` to my  `dbt run` command.
 
+##### stg_fhv_tripdata.sql
 ```sql
 {{ config (materialized='view') }}
 
@@ -63,21 +74,26 @@ select
 from {{ source('hw_staging', 'external_fhv_tripdata') }}
 ```
 
-After running successfully, I''ll query the created view model using BigQuery, in case there are some records out of the date range. 
+After running successfully, I'll query the created model using BigQuery, in case there are some records out of the date range. 
 
 ```sql
 SELECT COUNT(*) 
 FROM `dtc-de-375600.dbt_diegos.stg_fhv_tripdata` 
 WHERE DATE(pickup_datetime) BETWEEN '2019-01-01' AND '2019-12-31';
 ```
+<br>
+
 
 * The answer is: 43,244,696
 
+
+<br>
 
 ## Question 4. Counting 2019 FHV records (core model)
 
 Firstly, I'm gonna create the `fact_fhv_trips` fact table.
 
+##### fact_fhv_trips.sql
 ```sql
 {{ config(materialized='table') }}
 
@@ -120,20 +136,26 @@ SELECT COUNT(*)
 FROM `dtc-de-375600.dbt_diegos.fact_fhv_trips` 
 WHERE DATE(pickup_datetime) BETWEEN '2019-01-01' AND '2019-12-31';
 ```
+<br>
 
 * The answer is: 22,998,722
 
+<br>
 
 ## Question 5. Month with the highest number of FHV rides
 
 After running the project in the Production environment, I used `fact_fhv_trips` as a data source in my Google Looker Studio report.
-This are the results I got for each month:
+These are the results I got for each month:
+
+<br>
 
 <picture>
 <source media= "(prefers-color-scheme: light)" srcset= "https://github.com/dieg0sc/de_homework/blob/main/images/q5_trips_per_month.png">
 <img alt= "This is the picture for question 5.">
 </picture>
 
+
+<br>
 <br>
 
 * The answer is: January
