@@ -21,6 +21,8 @@ I got the answer from looking at the *Pie* graph in Google Looker Studio.
 <img alt= "This is the picture for question 2.">
 </picture>
 
+<br>
+
 * The answer is: 89.9/10.1
 
 ## Question 3. Counting 2019 FHV records (staging model)
@@ -127,6 +129,11 @@ WHERE DATE(pickup_datetime) BETWEEN '2019-01-01' AND '2019-12-31';
 After running the project in the Production environment, I used `fact_fhv_trips` as a data source in my Google Looker Studio report.
 This are the results I got for each month:
 
-(add image)
+<picture>
+<source media= "(prefers-color-scheme: light)" srcset= "https://github.com/dieg0sc/de_homework/blob/main/images/q5_trips_per_month.png">
+<img alt= "This is the picture for question 5.">
+</picture>
+
+<br>
 
 * The answer is: January
