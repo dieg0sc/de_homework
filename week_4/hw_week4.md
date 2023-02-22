@@ -32,8 +32,6 @@ I got the answer from looking at the *Pie* graph in Google Looker Studio.
 * The answer is: 89.9/10.1
 
 <br>
-<!-- another line cause the issue seems to remain, lol. -->
-<br>
 
 ## Question 3. Counting 2019 FHV records (staging model)
 
