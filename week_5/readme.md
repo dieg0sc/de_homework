@@ -14,7 +14,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 ```
 
-After that I checked which port the Spark UI was using `spark.sparkContext.uiWebUrl `.
+After that I checked which port the Spark UI was using `spark.sparkContext.uiWebUrl`.
 
 It was port 4040.
 
