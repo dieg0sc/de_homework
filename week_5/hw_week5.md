@@ -45,7 +45,7 @@ df = spark.read \
     .csv('fhvhv_tripdata_2021-06.csv')
 ```
 
-Which did a pretty decent job at infering the dtypes:
+Which did a pretty decent job at infering the dtypes
 
 `df.printSchema()`
 
@@ -59,7 +59,7 @@ root
  |-- SR_Flag: string (nullable = true)
  |-- Affiliated_base_number: string (nullable = true)
 ``` 
-I then defined `schema` because we want the pickup and dropoff fields to be *TimestampType*.
+Next, I defined `schema` because we want the pickup and dropoff fields to be *TimestampType*.
 
 ```python
 schema = types.StructType([
@@ -73,7 +73,7 @@ schema = types.StructType([
 ])
 ```
 
-After that I defined the `DataFrame` for FHVHV finally as it's shown here:
+After that I defined the final `DataFrame` for FHVHV as it's shown here:
 
 ```python
 df = spark.read \
@@ -99,8 +99,8 @@ Finally, I moved into the right directory in the CLI and checked the parquet fil
 
 ## Question 3. Count records
 
-I read the saved parquet file we did for Question 2 using `df= spark.read.parquet('data/pq/fhvhv/')`. Then, created a view
-(since tables are deprecated from Spark since version 2.0.0 ) with `df.createOrReplaceTempView("fhvhv_data")`. Finally, I ran
+I read the saved parquet file we did for Question 2 using `df= spark.read.parquet('data/pq/fhvhv/')`. Then, I created a view
+(tables are deprecated from Spark since version 2.0.0 ) with `df.createOrReplaceTempView("fhvhv_data")`. Finally, I ran
 the following query:
 
 ```sql
@@ -125,7 +125,7 @@ GROUP BY
 
 I calculated the time interval using `unix_timestamp` PySpark function, which gives us the time in seconds. Then, you can convert it 
 to another time-unit by doing the suitable algebraic operation.  
-After importing the set of functions with `from pyspark.sql.functions import *` , I executed the following query:
+After importing the set of pyspark.sql functions with `from pyspark.sql.functions import *` , I executed the following query:
 
 ```sql
 df_result = spark.sql("""
@@ -205,3 +205,5 @@ ORDER BY
     3 DESC
 """).show()
 ```
+
+* The answer is: Crown Heights North 
