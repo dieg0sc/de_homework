@@ -26,7 +26,7 @@ Finally, I executed the version command `spark.version` and got 3.3.2 .
 
 ## Question 2. HVFHW June 2021
 
-Firstly, I downloaded the csv file and unzipped it from the Jupyter Notebook:
+Firstly, I downloaded the CSV file and unzipped it:
 
 ```python
 ! wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/fhvhv/fhvhv_tripdata_2021-06.csv.gz
