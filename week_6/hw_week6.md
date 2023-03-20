@@ -2,7 +2,7 @@
 
 ## Question 1. Select the statements that are correct
 
-:white_check_mark:• Kafka Node is responsible to store topics \ 
+:white_check_mark:• Kafka Node is responsible to store topics \
 :white_check_mark:• Zookeeper is removed form Kafka cluster starting from version 4.0 \
 :white_check_mark:• Retention configuration ensures the messages not get lost over specific period of time. \
 :white_check_mark:• Group-Id ensures the messages are distributed to associated consumers
